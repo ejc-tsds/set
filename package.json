@@ -25,7 +25,9 @@
 		"url": "https://github.com/ejc-tsds/set/issues"
 	},
 	"homepage": "https://github.com/ejc-tsds/set#readme",
-	"dependencies": {},
+	"dependencies": {
+		"@ejc-tsds/arraylist": "latest"
+	},
 	"devDependencies": {
 		"@types/node": "latest",
 		"typescript": "latest",
