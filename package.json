@@ -1,41 +1,42 @@
 {
-	"name": "@ejc-tsds/set",
-	"version": "0.0.1",
-	"description": "",
-	"main": "dist/index",
-	"types": "dist/index",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"prepublishOnly": "npm run compile",
-		"compile": "npm run clean && /usr/local/bin/tsc -p tsconfig.json",
-		"watch": "tsc -w -p .",
-		"clean": "rm -rf dist"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/ejc-tsds/set.git"
-	},
-	"publishConfig": {
-		"access": "public"
-	},
-	"keywords": [],
-	"author": "Elijah Cobb <elijah@elijahcobb.com> (https://elijahcobb.com/)",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/ejc-tsds/set/issues"
-	},
-	"homepage": "https://github.com/ejc-tsds/set#readme",
-	"dependencies": {
-		"@ejc-tsds/arraylist": "latest"
-	},
-	"devDependencies": {
-		"@types/node": "latest",
-		"typescript": "latest",
-		"tslint": "latest",
-		"jest": "latest",
-		"@types/jest": "latest"
-	},
-	"files": [
-		"dist"
-	]
+  "name": "@ejc-tsds/set",
+  "version": "0.1.1",
+  "description": "A simple generic set data structure with an iterator.",
+  "main": "dist/index",
+  "types": "dist/index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run compile",
+    "compile": "npm run clean && /usr/local/bin/tsc -p tsconfig.json",
+    "watch": "tsc -w -p .",
+    "clean": "rm -rf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ejc-tsds/set.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [],
+  "author": "Elijah Cobb <elijah@elijahcobb.com> (https://elijahcobb.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ejc-tsds/set/issues"
+  },
+  "homepage": "https://github.com/ejc-tsds/set#readme",
+  "dependencies": {
+    "@ejc-tsds/arraylist": "latest",
+    "@ejc-tsds/iter": "latest"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.20",
+    "@types/node": "^12.11.7",
+    "jest": "^24.9.0",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.4"
+  },
+  "files": [
+    "dist"
+  ]
 }
