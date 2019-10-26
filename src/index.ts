@@ -100,13 +100,24 @@ export class Set<T> extends Iter<T> {
 
 	}
 
+
 	/**
-	 * Populate the set with a native Array. Duplicates will not be added to the set.
+	 * Remove all values from the set.
+	 */
+	public removeAll(): void {
+
+		this.list = new ArrayList<T>();
+
+	}
+
+	/**
+	 * Populate the set with a native Array. Duplicates will not be added to the set and items already in the set
+	 * will not be removed.
+	 *
 	 * @param value An Array to populate the set from.
 	 */
 	public fromArray(value: T[]): void {
 
-		this.list = new ArrayList<T>();
 		for (const v of value) this.add(v);
 
 	}
